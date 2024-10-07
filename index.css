@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit';
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(217, 54%, 11%);
+  /*border: 1px solid red;*/
+}
+
+.container {
+  margin: 3.75em;
+  width: 30%;
+  padding: 0.8em;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: hsl(215, 32%, 27%);
+  box-shadow: 15px 15px 6px 0 rgba(0, 0, 0, 0.7);
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+  cursor: pointer;
+  /*border: 1px solid yellow;*/  
+}
+
+.image-container:hover .eye{
+  opacity: 0.5;
+  /*background-color: red;*/
+}
+
+.cube {
+  display: block;
+  position: relative;
+  left: 5%;
+  margin-top: 10px;
+  padding-left: 25px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.eye {
+  position: relative;
+  right: 53%;
+  top: 90%;
+  width: 30%;
+  /*background-color: red;*/
+  transform: translate((-50%, -50%));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background-color: hsl(215, 51%, 70%);
+}
+
+.title {
+  margin: 0.6em 0 0.6em 0.6em;
+  font-size: 1.2rem;
+  color: white;
+  /*border: 1px solid green;*/
+}
+
+.content {
+  margin: 0 0 0 0.6em;
+  
+  font-size: 0.9rem;
+  color: rgb(184, 184, 184);
+  /*border: 1px solid blue;*/
+}
+
+.info {
+  margin: 1em 0 0;
+  display: flex;
+  justify-content: space-between;
+  /*border: 1px solid black;*/
+}
+
+img.symb, img.time {
+  width: 0.8em;
+  margin-right: 0.3em;
+  vertical-align: middle;
+}
+
+img.time {
+  margin-bottom: 3px;
+  width: 1.4em;
+}
+
+p.diamond {
+  color: hsl(178, 100%, 50%);
+}
+
+p.diamond, p.clock {
+  margin: 5px 0px 0 0;
+  font-size: 15px;
+}
+
+.foot {
+  margin: 0.6em 0 0;
+  /*border: 1px solid rgb(255, 165, 0);*/
+}
+
+img.author-img {
+  width: 15%;
+  margin: 0.3em 0.4em 0.3em 0;
+  vertical-align: middle;
+}
+
+.author {
+  color: white;
+}
+
+p {
+  color: rgb(184, 184, 184);
+}
+
+/*
+@media (min-width: 761px) and (max-height: 1023px) {
+  .container {
+    width: 40%;
+  }
+  .cube {
+    margin: 1em 0 0 0.3em;
+    border-radius: 10px;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+
+
+@media (min-width: 375px) and (max-width: 760px) {
+  .container {
+    width: 300px;
+  }
+
+  h1,p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 374px) {
+  .container {
+    width: 90%;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  .cube {
+    width: 100%;
+  }
+}
+*/
